@@ -1,0 +1,180 @@
+-- CXX standard of parent project: 17
+-- CXX standard: 17
+-- C++ Requests CMake Options
+-- =======================================================
+--   CPR_GENERATE_COVERAGE: OFF
+--   CPR_CURL_NOSIGNAL: OFF
+--   CURL_VERBOSE_LOGGING: OFF
+--   CPR_USE_SYSTEM_GTEST: OFF
+--   CPR_USE_SYSTEM_CURL: OFF
+--   CPR_ENABLE_CURL_HTTP_ONLY: ON
+--   CPR_ENABLE_SSL: ON
+--   CPR_FORCE_OPENSSL_BACKEND: OFF
+--   CPR_FORCE_WINSSL_BACKEND: OFF
+--   CPR_FORCE_DARWINSSL_BACKEND: OFF
+--   CPR_FORCE_MBEDTLS_BACKEND: OFF
+--   CPR_ENABLE_LINTING: OFF
+--   CPR_ENABLE_CPPCHECK: OFF
+--   CPR_BUILD_TESTS: OFF
+--   CPR_BUILD_TESTS_SSL: OFF
+--   CPR_BUILD_TESTS_PROXY: OFF
+--   CPR_SKIP_CA_BUNDLE_SEARCH: OFF
+--   CPR_USE_BOOST_FILESYSTEM: OFF
+--   CPR_DEBUG_SANITIZER_FLAG_THREAD: OFF
+--   CPR_DEBUG_SANITIZER_FLAG_ADDR: OFF
+--   CPR_DEBUG_SANITIZER_FLAG_LEAK: OFF
+--   CPR_DEBUG_SANITIZER_FLAG_UB: OFF
+--   CPR_DEBUG_SANITIZER_FLAG_ALL: OFF
+-- =======================================================
+-- Automatically detecting SSL backend.
+-- Detecting SSL backend...
+-- SSL auto detect: Using WinSSL.
+-- Configuring built-in curl...
+CMake Deprecation Warning at build/_deps/zlib-src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Using CMake version 4.2.3
+-- ZLIB_HEADER_VERSION: 1.2.11
+-- ZLIBNG_HEADER_VERSION: 2.0.6
+-- Arch detected: 'x86_64'
+-- Basearch of 'x86_64' has been detected as: 'x86'
+-- Architecture supports unaligned reads
+-- Architecture supports unaligned reads of > 4 bytes
+-- Architecture-specific source files: arch/x86/x86.c;arch/x86/slide_avx.c;arch/x86/chunkset_avx.c;arch/x86/compare258_avx.c;arch/x86/adler32_avx.c;arch/x86/insert_string_sse.c;arch/x86/compare258_sse.c;arch/x86/chunkset_sse.c;arch/x86/slide_sse.c;arch/x86/adler32_ssse3.c;arch/x86/crc_folding.c
+-- The following features have been enabled:
+
+ * CMAKE_BUILD_TYPE, Build type: Debug (selected)
+ * WITH_GZFILEOP, Compile with support for gzFile related functions
+ * ZLIB_COMPAT, Compile with zlib compatible API
+ * WITH_OPTIM, Build with optimisation
+ * WITH_NEW_STRATEGIES, Use new strategies
+ * WITH_UNALIGNED, Support unaligned reads on platforms that support it
+ * WITH_AVX2, Build with AVX2
+ * WITH_SSE2, Build with SSE2
+ * WITH_SSSE3, Build with SSSE3
+ * WITH_SSE4, Build with SSE4
+ * WITH_PCLMULQDQ, Build with PCLMULQDQ
+ * AVX2_SLIDEHASH, Support AVX2 optimized slide_hash, using ""
+ * AVX_CHUNKSET, Support AVX optimized chunkset, using ""
+ * AVX2_COMPARE258, Support AVX2 optimized compare258, using ""
+ * AVX2_ADLER32, Support AVX2-accelerated adler32, using ""
+ * SSE42_CRC, Support SSE4.2 optimized CRC hash generation, using ""
+ * SSE42_COMPARE258, Support SSE4.2 optimized compare258, using ""
+ * SSSE3_ADLER32, Support SSSE3-accelerated adler32, using ""
+ * PCLMUL_CRC, Support CRC hash generation using PCLMULQDQ, using "  "
+
+-- The following OPTIONAL packages have been found:
+
+ * Git
+
+-- The following features have been disabled:
+
+ * ZLIB_ENABLE_TESTS, Build test binaries
+ * ZLIB_DUAL_LINK, Dual link tests against system zlib
+ * WITH_FUZZERS, Build test/fuzz
+ * WITH_NATIVE_INSTRUCTIONS, Instruct the compiler to use the full instruction set on this host (gcc/clang -march=native)
+ * WITH_MAINTAINER_WARNINGS, Build with project maintainer warnings
+ * WITH_CODE_COVERAGE, Enable code coverage reporting
+ * WITH_INFLATE_STRICT, Build with strict inflate distance checking
+ * WITH_INFLATE_ALLOW_INVALID_DIST, Build with zero fill for inflate invalid distances
+ * INSTALL_UTILS, Copy minigzip and minideflate during install
+
+-- Enabled curl SSL
+-- curl version=[7.80.0]
+-- Could NOT find ZLIB (missing: ZLIB_LIBRARY ZLIB_INCLUDE_DIR) 
+-- Could NOT find LibSSH2 (missing: LIBSSH2_LIBRARY LIBSSH2_INCLUDE_DIR) 
+-- Enabled features: SSL IPv6 unixsockets AsynchDNS Largefile SSPI alt-svc HSTS SPNEGO Kerberos NTLM
+-- Enabled protocols: HTTP HTTPS
+-- Enabled SSL backends: Schannel
+-- Using the multi-header code from C:/Workdir/etc/Projects/FedData/build/_deps/nlohmann_json-src/include/
+-- Configuring done (4.2s)
+-- Generating done (0.5s)
+-- Build files have been written to: C:/Workdir/etc/Projects/FedData/build
+[ 50%] Built target libcurl
+[ 59%] Built target cpr
+[ 63%] Built target gumbo
+[ 82%] Built target litehtml
+[ 83%] Building CXX object CMakeFiles/fed_terminal.dir/src/api/SecClient.cpp.obj
+SecClient.cpp
+[ 83%] Linking CXX executable fed_terminal.exe
+[ 88%] Built target fed_terminal
+[ 88%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/adler32.c.obj
+adler32.c
+[ 89%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/chunkset.c.obj
+chunkset.c
+[ 89%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/compare258.c.obj
+compare258.c
+[ 89%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/compress.c.obj
+compress.c
+[ 90%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/crc32.c.obj
+crc32.c
+[ 90%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/crc32_comb.c.obj
+crc32_comb.c
+[ 90%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/deflate.c.obj
+deflate.c
+[ 91%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/deflate_fast.c.obj
+deflate_fast.c
+[ 91%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/deflate_medium.c.obj
+deflate_medium.c
+[ 91%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/deflate_quick.c.obj
+deflate_quick.c
+[ 92%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/deflate_slow.c.obj
+deflate_slow.c
+[ 92%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/functable.c.obj
+functable.c
+[ 92%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/infback.c.obj
+infback.c
+[ 92%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/inffast.c.obj
+inffast.c
+[ 93%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/inflate.c.obj
+inflate.c
+[ 93%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/inftrees.c.obj
+inftrees.c
+[ 93%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/insert_string.c.obj
+insert_string.c
+[ 94%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/trees.c.obj
+trees.c
+[ 94%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/uncompr.c.obj
+uncompr.c
+[ 94%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/zutil.c.obj
+zutil.c
+[ 95%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/x86.c.obj
+x86.c
+[ 95%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/slide_avx.c.obj
+slide_avx.c
+[ 95%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/chunkset_avx.c.obj
+chunkset_avx.c
+[ 96%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/compare258_avx.c.obj
+compare258_avx.c
+[ 96%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_avx.c.obj
+adler32_avx.c
+[ 96%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/insert_string_sse.c.obj
+insert_string_sse.c
+[ 97%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/compare258_sse.c.obj
+compare258_sse.c
+[ 97%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/chunkset_sse.c.obj
+chunkset_sse.c
+[ 97%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/slide_sse.c.obj
+slide_sse.c
+[ 98%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_ssse3.c.obj
+adler32_ssse3.c
+[ 98%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/crc_folding.c.obj
+crc_folding.c
+[ 98%] Building RC object _deps/zlib-build/CMakeFiles/zlib.dir/win32/zlib1.rc.res
+Microsoft (R) Windows (R) Resource Compiler Version 10.0.10011.16384
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+[ 99%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/gzlib.c.obj
+gzlib.c
+[ 99%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/gzread.c.obj
+gzread.c
+[ 99%] Building C object _deps/zlib-build/CMakeFiles/zlib.dir/gzwrite.c.obj
+gzwrite.c
+[100%] Linking C static library zlib.dll
+[100%] Built target zlib
